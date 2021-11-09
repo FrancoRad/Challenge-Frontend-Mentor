@@ -116,16 +116,20 @@ section ul p{
 
     main {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap; /* Cuando la plantalla se achica te pasa los elementos hacia abajo */
+        flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
-        height: 200px;
+        height: 468px;
     }
 
     section .text{
         margin-bottom: 3em;
     }
 
+    section{
+        border-radius: 0px 0px 10px 10px;
+    }
     section ul {
         flex-direction: column;
         align-items: center;
@@ -138,9 +142,12 @@ section ul p{
         text-align: center;
     }
     .bg-image {
-    min-width: 300px;
-    border-radius: 10px 10px 0 0;
+    min-width: 462.35px;
+    height: 462.35px;
+    border-radius: 10px 10px 0px 0px;
     background: url(./images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
     overflow: hidden;
+    
     }
   }
