@@ -101,3 +101,46 @@ section ul p{
     color: hsl(228, 45%, 44%);
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+    :root {
+      font-size: 14px;
+    }
+    section {
+      padding: 3em 4.5em 3em 3em;
+    }
+  }
+
+  @media only screen and (max-width: 625px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    section .text{
+        margin-bottom: 3em;
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section ul li {
+        margin-bottom: 2em;
+    }
+    section ul h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .bg-image {
+    min-width: 300px;
+    border-radius: 10px 10px 0 0;
+    background: url(./images/image-header-mobile.jpg);
+    overflow: hidden;
+    }
+  }
